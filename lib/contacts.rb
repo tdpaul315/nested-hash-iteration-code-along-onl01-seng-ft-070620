@@ -2,23 +2,17 @@
   
 def list_1(hash)
   hash.each do |person, data|
-    #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
-    #to iterate over the "data" hash, we can use the following line: 
- 
-    data.each do |attribute, value|
+  data.each do |attribute, value|
       puts "#{attribute}: #{value}"
     end
   end
 end 
 
-# list_1(contacts)
+
 
 def list_2(hash)
   hash.each do |person, data|
-    #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
-    #to iterate over the "data" hash, we can use the following line: 
- 
-    data.each do |attribute, value|
+  data.each do |attribute, value|
       if attribute == :favorite_ice_cream_flavors
         value.each do |flavor|
           # here, each index element in an ice cream flavor string
@@ -29,7 +23,7 @@ def list_2(hash)
   end
 end 
 
-# list_2(contacts)
+
 
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
